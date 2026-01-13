@@ -1,0 +1,52 @@
+
+# environment.yaml для проекта logistics_analyzer
+name: logistics
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  # Базовые
+  - python=3.11
+  - pandas=2.0.3
+  - numpy=1.24.3
+  - matplotlib=3.7.3
+  - seaborn=0.12.2
+  
+  # Jupyter для анализа
+  - jupyter
+  - jupyterlab
+  - notebook
+  
+  # Backend для веб-интерфейса
+  - fastapi
+  - uvicorn
+  
+  # Геоданные (для логистики)
+  - geopandas
+  - folium
+  
+  # Инструменты разработки
+  - black
+  - flake8
+  - pytest
+  
+  - pip
+  - pip:
+    # Быстрые дашборды
+    - streamlit
+
+    # Оптимизация (для маршрутов)  
+    - ortools
+    # Парсинг и работа с API
+    - requests
+    - beautifulsoup4
+    
+    # Работа с Excel
+    - openpyxl
+    - xlrd
+    
+    # Утилиты
+    - python-dotenv
+    - loguru
+    - tqdm
