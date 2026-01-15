@@ -1,0 +1,28 @@
+logistics_analyzer/
+├── app/
+│   ├── __init__.py
+│   ├── models/          # Модели данных
+│   │   ├── __init__.py
+│   │   └── shipment.py  # Модель перевозки
+│   ├── services/        # Бизнес-логика
+│   │   ├── __init__.py
+│   │   ├── analyzer.py  # Анализ данных
+│   │   └── reporter.py  # Генерация отчетов
+│   └── utils/           # Утилиты
+│       ├── __init__.py
+│       ├── data_loader.py
+│       └── visualizer.py
+├── scripts/
+│   ├── analyze.py       # Основной скрипт
+│   └── cli.py           # CLI интерфейс
+├── tests/               # Тесты
+│   ├── __init__.py
+│   └── test_analyzer.py
+├── data/                # Данные
+│   ├── raw/            # Исходные данные
+│   └── processed/      # Обработанные данные
+├── notebooks/          # Jupyter ноутбуки
+├── reports/            # Отчеты
+├── docs/              # Документация
+├── requirements.txt   # Зависимости
+└── README.md         # Описание проекта
