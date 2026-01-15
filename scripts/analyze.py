@@ -31,7 +31,7 @@ class LogisticsAnalyzer:
                 # Преобразование типов данных
                 row['distance_km'] = int(row['distance_km'])
                 row['weight_kg'] = int(row['weight_kg'])
-                row['cost_rub'] = int(row['cost_rub'])
+                row['cost_rub'] = float(row['cost_rub'])
                 row['date'] = datetime.strptime(row['date'], '%Y-%m-%d')
                 self.shipments.append(row)
         
@@ -148,7 +148,7 @@ def main():
     """Основная функция"""
     try:
         # Создаем анализатор
-        analyzer = LogisticsAnalyzer('data/shipments.csv')
+        analyzer = LogisticsAnalyzer('data/shipments_extended.csv')
         
         # Генерируем отчет
         analyzer.generate_report()

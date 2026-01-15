@@ -1,10 +1,10 @@
 Отчет KPI
 ========================================
-total_shipments: 10
-total_cost: 270500
-total_distance: 12220
-total_weight: 9650
-avg_cost_per_km: 21.884691482226692
-avg_cost_per_kg: 27.913888888888888
-avg_distance: 1222.0
-avg_weight: 965.0
+total_shipments: 1500
+total_cost: 106395360.49000011
+total_distance: 2369905
+total_weight: 3835154
+avg_cost_per_km: 46.746088950391155
+avg_cost_per_kg: 58.776917562646496
+avg_distance: 1579.9366666666667
+avg_weight: 2556.769333333333
